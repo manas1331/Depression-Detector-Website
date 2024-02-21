@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Helpline Phone Numbers</title>
+        <link rel="stylesheet" href="services1.css">
+    </head>
+            <body>
+                <div class="hero">
+                    <div class="form-box">
+                        <div class="button-box">
+                            <div id="btn"></div>
+                           <button type="button" class="toggle-btn" onclick="login()">Contact</button>
+                           <button type="button" class="toggle-btn" onclick="register()">Home</button> 
+                        </div>
+                    
+                    <form id="login" class="input group">
+                        <marquee  style="padding-bottom: 70px;"><h2>Important Helpline Numbers</h2></marquee>
+                        <div class="copy-text">
+                            
+            
+                            <div class="copy-link">
+                                <input type="text" class="copy-link-input" value="18001213667" readonly style="padding-left: 80px;">
+                                <button type="button" class="copy-link-button">
+                                  <span class="material-icons">Copy</span>
+                                </button>
+                              </div>
+                              
+                            <div class="copy1-link">
+                                <input type="text" class="copy1-link-input" value="9152987821" readonly style="padding-left: 80px;">
+                                <button type="button" class="copy1-link-button">
+                                  <span class="material-icons">Copy</span>
+                                </button>
+                              </div>
+                              
+                              <div class="copy2-link">
+                                <input type="text" class="copy2-link-input" value="1800 599 0019" readonly style="padding-left: 80px;">
+                                <button type="button" class="copy2-link-button">
+                                  <span class="material-icons">Copy</span>
+                                </button>
+                              </div>
+
+                              <div class="copy3-link">
+                                <input type="text" class="copy3-link-input" value="800 273 8255" readonly style="padding-left: 80px;">
+                                <button type="button" class="copy3-link-button">
+                                  <span class="material-icons">Copy</span>
+                                </button>
+                              </div>
+                        
+                    </div>
+                    </form>
+                
+                    <form id="register" class="input group">
+                      <a href="/home1.html">Home</a>
+                    </form>
+                </div>
+            </div>
+            <script>
+                var x=document.getElementById("login");
+                var y=document.getElementById("register");
+                var z=document.getElementById("btn");
+
+                function register(){
+                    x.style.left="-450px";
+                    y.style.left="50px";
+                    z.style.left="110px";
+                    window.location.href = "/home1.html";
+                }
+
+                function login(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0px";
+                }
+
+                document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+                    const inputField = copyLinkParent.querySelector(".copy-link-input");
+                    const copyButton = copyLinkParent.querySelector(".copy-link-button");
+                    const text = inputField.value;
+                  
+                    inputField.addEventListener("focus", () => inputField.select());
+                  
+                    copyButton.addEventListener("click", () => {
+                      inputField.select();
+                      navigator.clipboard.writeText(text);
+                  
+                      inputField.value = "Phone Number Copied!";
+                      setTimeout(() => (inputField.value = text), 2000);
+                    });
+                  });
+
+                  document.querySelectorAll(".copy1-link").forEach((copyLinkParent) => {
+                    const inputField = copyLinkParent.querySelector(".copy1-link-input");
+                    const copyButton = copyLinkParent.querySelector(".copy1-link-button");
+                    const text = inputField.value;
+                  
+                    inputField.addEventListener("focus", () => inputField.select());
+                  
+                    copyButton.addEventListener("click", () => {
+                      inputField.select();
+                      navigator.clipboard.writeText(text);
+                  
+                      inputField.value = "Phone Number Copied!";
+                      setTimeout(() => (inputField.value = text), 2000);
+                    });
+                  });
+
+                  document.querySelectorAll(".copy2-link").forEach((copyLinkParent) => {
+                    const inputField = copyLinkParent.querySelector(".copy2-link-input");
+                    const copyButton = copyLinkParent.querySelector(".copy2-link-button");
+                    const text = inputField.value;
+                  
+                    inputField.addEventListener("focus", () => inputField.select());
+                  
+                    copyButton.addEventListener("click", () => {
+                      inputField.select();
+                      navigator.clipboard.writeText(text);
+                  
+                      inputField.value = "Phone Number Copied!";
+                      setTimeout(() => (inputField.value = text), 2000);
+                    });
+                  });
+
+                  document.querySelectorAll(".copy3-link").forEach((copyLinkParent) => {
+                    const inputField = copyLinkParent.querySelector(".copy3-link-input");
+                    const copyButton = copyLinkParent.querySelector(".copy3-link-button");
+                    const text = inputField.value;
+                  
+                    inputField.addEventListener("focus", () => inputField.select());
+                  
+                    copyButton.addEventListener("click", () => {
+                      inputField.select();
+                      navigator.clipboard.writeText(text);
+                  
+                      inputField.value = "Phone Number Copied!";
+                      setTimeout(() => (inputField.value = text), 2000);
+                    });
+                  });
+                  
+
+
+                  
+                
+
+</script>
+            </body>
+    
+</html>
