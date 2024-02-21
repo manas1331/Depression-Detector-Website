@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Website</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <section class="about_section" id="About">
+        <div class="about_details">
+            <h1 color="darkyellow">ABOUT</h1>
+            <p id="autotype-text"></p>
+        </div>
+    </section>
+    <script > 
+    const textToType = `The act of speaking is an act of expression, it lets the human soul unload and unwind, and to those who may be suffering from depression, simply speaking and expressing oneself is a small start, but works wonders in curing their depression. This service is one among the many we will provide you; our website lets a user speak with an online chatbot, it can be used for speaking and unwinding after a long hard day, or it can be used by those concerned about their mental health and well-being. To the latter, we will help determining which stage of depression they are in through the conversations they have with the chatbot, after which, the chatbot will help by providing support to the user, or, in extreme cases, our website will allow the user to contact and make an appointment with a medical professional.`;
+
+const textElement = document.getElementById('autotype-text');
+
+let index = 0;
+const intervalId = setInterval(() => {
+    textElement.textContent += textToType[index];
+    index++;
+    if (index === textToType.length) {
+        clearInterval(intervalId);
+    }
+}, 50); // Adjust the interval to control the typing speed
+</script>
+</body>
+</html>
