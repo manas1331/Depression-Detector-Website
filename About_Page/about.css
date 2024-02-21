@@ -1,0 +1,28 @@
+.about_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about_details {
+    text-align: center;
+    color: springgreen; /* Default text color */
+    padding: 20px;
+    max-width: 600px;
+}
+
+.about_details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:darkorange
+}
+
+.about_details p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
