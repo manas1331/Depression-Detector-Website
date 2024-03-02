@@ -3,3 +3,5 @@ Welcome to our innovative platform dedicated to early detection of depression, c
 Our website utilizes a blend of JavaScript, HTML, CSS, Bootstrap, and Flask to deliver a seamless and user-friendly experience. With a focus on accessibility and ease of use, our platform aims to reach a wide audience and offer valuable insights into one's mental health.
 
 We are also planning to integrate the chatbot in the same website which we had built during the Hackathon. 
+
+NOTE : It is important to run this code on a system which has a gpu or use other services like Google Colab, Jupyter notebook, etc which offer resources like gpu.
