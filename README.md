@@ -6,4 +6,5 @@ Our website utilizes a blend of JavaScript, HTML, CSS, Bootstrap, and Flask to d
 
 We have also integrated a chatbot in this project which uses large language models and fine tuning to create a chatbot which can speak with a user, determine whether or not they are depressed, and suggest verbal countermeasures after interacting with the user by asking a set of questions genearted by the bot . 
 
-NOTE : It is important to run this code on a system which has a gpu or use other services like Google Colab, Jupyter notebook, etc which offer resources like gpu.
+# NOTE :
+ It is important to run this code on a system which has a gpu or use other services like Google Colab, Jupyter notebook, etc which offer resources like gpu.
