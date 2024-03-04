@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Integration</title>
+    <link rel="stylesheet" href="../static/chatbot.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button class="chatbot-toggler"></button>
+    <span class="materials-symbols-outlined">comment</span>
+    <span class="materials-symbols-outlined">close</span>
+
+    <div class="chatbot">
+        <header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="materials-symbols-outlined">smart</span>
+                    <p>Hi there 👋🏼 How can I help you today?</p>
+                </li>
+                <li class="chat-outgoing">
+                    
+                </li>
+            </ul>
+        </header>
+        <div class="chat-input">
+            <textarea id="user-input" placeholder="Enter a message...."></textarea>
+            <span id="send-btn" class="materials-symbols-outlined">send</span>
+        </div>
+    </div>
+
+    <div class="chat-container"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#send-btn').click(function(){
+                sendMessage();
+            });
+        });
+
+        function sendMessage() {
+            var userInput = $('#user-input').val();
+            $('.chat-container').append('<p>You: ' + userInput + '</p>');
+            $('#user-input').val('');
+
+            $.ajax({
+                url: 'http://localhost:5000/chatbot', // Assuming your Flask app is running on localhost:5000
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ message: userInput }),
+                success: function(response) {
+                    $('.chat-container').append('<p>Chatbot: ' + response.response + '</p>');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
