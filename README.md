@@ -1,4 +1,4 @@
-# Health Hackathon Website (For Detecting Early onset of depression)
+# Health Hackathon Website (For Detecting Early onset of depression) 
 
 Welcome to our innovative platform dedicated to early detection of depression, crafted with care and expertise by our team for the Weal Health Hackathon. In today's fast-paced world, mental health awareness is more crucial than ever, and our mission is to provide a solution that empowers individuals to take proactive steps towards their well-being.
 
